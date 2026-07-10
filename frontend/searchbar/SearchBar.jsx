@@ -49,37 +49,3 @@ const SearchBar = () => {
 };
 
 export default SearchBar;
-/*import { useState } from "react";
-import { FaSearch } from "react-icons/fa";
-
-export default function SearchBar({ onSearch }) {
-  const [searchTerm, setSearchTerm] = useState("");
-
-  const handleSearch = (e) => {
-    e.preventDefault();
-    const term = searchTerm.trim();
-    if (!term) return;
-
-    if (onSearch) {
-      onSearch(term);
-    } else {
-      console.log("Buscando:", term);
-    }
-  };
-
-  return (
-    <form className="d-flex" role="search" onSubmit={handleSearch}>
-      <input
-        type="search"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-        className="form-control me-2"
-        placeholder="Buscar..."
-        aria-label="Buscar"
-      />
-      <button className="btn btn-light" type="submit" aria-label="Buscar">
-        <FaSearch />
-      </button>
-    </form>
-  );
-}*/
